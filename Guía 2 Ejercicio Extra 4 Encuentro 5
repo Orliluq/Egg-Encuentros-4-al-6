@@ -1,0 +1,43 @@
+/// La empresa "Te llevo a todos lados" está destinada al alquiler de autos y tiene un sistema
+/// de tarifa que consiste en cobrar el alquiler por hora. Si el cliente devuelve el auto dentro
+/// de las 2 horas de uso el valor que corresponde pagar es de $400 pesos y la nafta va de
+/// regalo. Cuando el cliente regresa a la empresa pasadas las 2 horas, se ingresan la
+/// cantidad de litros de nafta gastados y el tiempo transcurrido en horas. Luego, se le cobra
+/// 40 pesos por litro de nafta gastado, y la hora se fracciona en minutos, cobrando un total
+/// de $5,20 el minuto de uso. Realice un programa que permita registrar esa información y
+/// el total a pagar por el cliente.
+
+Algoritmo alquilerVehiculo
+	
+	Definir horaI, minI, horaF, minF, tiempo, minExtra, litros, nafta Como Real
+	Escribir "Ingrese la hora de salida del vehículo expresados: ";
+	Leer horaI
+	Escribir "Ingrese los minutos de salida del vehículo expresados:  ";
+	Leer minI
+	
+	Escribir "Ingrese el tiempo de uso del vehículo expresado en minutos: ";
+	Leer tiempo
+	
+	Si tiempo <= 120 Entonces
+		Escribir "El costo del servicio de alquiler del vehículo a pagar es $400 y la nafta va de regalo."; 
+	SiNo
+		Escribir "Por favor, ingrese cuántos litros de nafta consumió el vehículo?: ";
+		Leer nafta
+		litros = nafta*40
+		minExtra = tiempo*5.20
+		
+	Mientras tiempo >=60 Hacer
+			horaF = horaI+1
+			tiempo = tiempo-60
+			minF = minI+tiempo;
+	Fin Mientras
+		
+		Escribir "Ingrese la hora de entrega del vehículo: " horaF "hs:", minF "m.";
+		Escribir "Precio del servicio: ", litros;
+		Escribir "Nafta = $ "  nafta;
+		Escribir "Tiempo de uso total a pagar : $ " minExtra;
+		
+	Fin Si
+	
+
+FinAlgoritmo
