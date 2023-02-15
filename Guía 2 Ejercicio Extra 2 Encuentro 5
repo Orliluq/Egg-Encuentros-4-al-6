@@ -1,0 +1,25 @@
+/// Una tienda ofrece para los meses de septiembre, octubre y noviembre un descuento del
+/// 10% sobre el total de la compra que realiza un cliente. Solicitar al usuario que ingrese un
+/// mes y el importe de la compra. El programa debe calcular cuál es el monto total que se
+/// debe cobrar al cliente e imprimirlo por pantalla.
+
+Algoritmo tienda_descuento
+	
+	Definir mes9, mes10, mes11, mes Como Entero
+	Definir descuento, importe Como Logica
+	Escribir "Escribe el importe de la compra: ";
+    Leer importe
+	
+    Escribir "Introduce el mes de la compra en números: ";
+    Leer mes
+	descuento == importe*0.10
+	
+	//Si el mes es septiembre, octubre y noviembre se aplicará el descuento del 10%.
+	
+	Si mes9 == 9 O mes10 == 10 O mes11 == 11 Entonces;
+		Escribir "El total de la compra con descuento es igual a: ";
+	SiNo
+		Escribir "El total de la compra con descuento es igual a: ";
+	Fin Si
+			
+FinAlgoritmo
