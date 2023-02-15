@@ -1,0 +1,22 @@
+/// Escriba un programa en donde se le pregunte al estudiante si el día de hoy le toca ser el 
+/// facilitador de tu equipo. En caso de que sea, que muestre por pantalla el siguiente mensaje: 
+/// "¡Felicidades! Eres el facilitador de tu equipo."
+
+Algoritmo Facilitador_dia
+	
+	Definir lunes, martes, miercoles, jueves Como Caracter
+	Definir viernes, sabado, domingo Como Caracter
+	Definir dia Como Caracter
+	Escribir "Ingrese el día de hoy: "
+	Leer dia
+	
+	Segun dia Hacer
+		"lunes": Escribir "¡Felicidades! Eres el facilitador de tu equipo."	
+		"martes": Escribir "¡Felicidades! Eres el facilitador de tu equipo."	
+		"miercoles": Escribir "¡Felicidades! Eres el facilitador de tu equipo."	
+		"jueves": Escribir "¡Felicidades! Eres el facilitador de tu equipo."	
+		De Otro Modo:
+			Escribir "Lo siento, hoy no eres facilitador de tu equipo."
+	Fin Segun
+	
+FinAlgoritmo
