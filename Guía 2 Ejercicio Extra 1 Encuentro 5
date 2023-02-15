@@ -1,0 +1,27 @@
+/// Realizar un programa que pida tres notas y determine si un alumno aprueba o reprueba
+/// un curso, sabiendo que aprobará el curso si su promedio de tres calificaciones es mayor o
+/// igual a 70; y reprueba en caso contrario.
+
+
+Algoritmo Calificaciones_mayor_70
+	
+	Definir nota1, nota2, nota3, promedio Como Real
+
+	Escribir "Escribe la Nota 1: ";
+	Leer nota1
+	Escribir "Escribe la Nota 2: ";
+	Leer nota2
+	Escribir "Escribe la Nota 3: ";
+	Leer nota3
+	
+	promedio = (nota1 + nota2 + nota3)/3;
+	
+	Si promedio >= 70 Entonces
+		Escribir "El alumno aprobó el curso.";
+	SiNo
+		Escribir "El alumno reprobó el curso.";
+
+	FinSi
+	
+FinAlgoritmo
+
