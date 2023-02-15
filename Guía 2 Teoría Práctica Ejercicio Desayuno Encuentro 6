@@ -1,0 +1,36 @@
+/// Es tu turno, diseña un condicional anidado que le pregunte al usuario si quiere tomar té o café y
+/// en caso de que quiera tomar café, preguntar si solo o cortado y en caso de ser cortado, si
+/// prefiere leche vegetal.
+
+Algoritmo ejercicio_desayuno
+	
+	Definir bebida, tomarCafe, cafeLeche Como Caracter
+	
+	
+	Escribir "Bienvenido a la cafetería";
+	Escribir "¿Desea beber té o café?";
+	Leer bebida;
+	
+	Si bebida == "te" Entonces;
+		Escribir "Enseguida le traigo su té";
+		Escribir "Fin";
+	SiNo
+		Escribir "¿Cómo bebe su café, negro o cortado?:";
+		Leer tomarCafe;
+		Si tomarCafe == "negro" Entonces;
+			Escribir "Enseguida le traigo su café negro";
+			Escribir "Fin";
+		SiNo
+			Escribir "Su café cortado lo desea con leche vegetal? Si/No";
+			Leer cafeLeche;
+			Si cafeLeche == "s" O cafeLeche == "si" Entonces;
+				Escribir "Enseguida le traigo su café cortado con leche vegetal";
+				Escribir "Fin";
+			SiNo
+				Escribir "Enseguida le traigo su café cortado con leche.";
+				Escribir "Fin";
+			FinSi
+		FinSi
+	FinSi
+	
+FinAlgoritmo
