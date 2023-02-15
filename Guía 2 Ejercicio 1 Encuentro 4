@@ -1,0 +1,24 @@
+/// Un hombre desea saber si su sueldo es mayor al sueldo mínimo, el programa le pedirá al 
+/// usuario su sueldo actual y el sueldo mínimo. Si el sueldo es mayor al mínimo se debe 
+/// mostrar un mensaje por pantalla indicándolo.
+
+Algoritmo Sueldo_minimo_y_actual
+	
+	Definir sueldoactual,sueldominimo Como Real
+	Definir sueldo Como Caracter
+	
+	sueldo = ();
+	
+	Escribir "Ingrese el sueldo mínimo: "; 
+		Leer sueldominimo
+		Escribir "Ingrese su sueldo actual: ";
+		Leer sueldoactual
+		
+		Si sueldoactual>sueldominimo Entonces
+			Escribir "Su sueldo actual es mayor al sueldo mínimo.";
+		SiNo
+			Escribir "Su sueldo actual no es mayor al sueldo mínimo." 
+		FinSi
+		
+	
+FinAlgoritmo
