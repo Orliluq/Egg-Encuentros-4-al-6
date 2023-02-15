@@ -1,0 +1,18 @@
+/// Hacer un algoritmo que lea un número por el teclado y determine si tiene tres dígitos.
+
+Algoritmo numero_tres_digitos
+	
+	Definir num Como Entero
+	Escribir "Ingresa un número:";
+	leer num;
+		Si  num > -1000 y num < -99  Entonces;
+			Escribir "El número ",num, " tiene 3 dígitos.";
+		SiNo
+			Si num > 99 y num < 1000 Entonces;
+				Escribir "El número ",num, " tiene 3 dígitos.";
+			SiNo
+				Escribir "El número ",num, " no tiene 3 dígitos.";
+			FinSi
+		FinSi	
+	
+FinAlgoritmo
