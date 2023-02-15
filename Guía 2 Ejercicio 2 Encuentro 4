@@ -1,0 +1,20 @@
+/// Construir un pseudocódigo que permita ingresar un número, si el número es mayor de 
+/// 500, se debe calcular y mostrar en pantalla el 18% de este.
+
+Algoritmo Mayor_de_500
+	
+	Definir num, porcentaje, resultado Como Real
+	
+	porcentaje = 18
+	
+	Escribir "Ingrese un número: ";
+	Leer num
+		
+	Si num>= 500 Entonces
+		resultado = num * (porcentaje/100)
+		Escribir "El ",porcentaje," porciento de ",num," es: ", resultado
+	SiNo
+		Escribir "El número no es mayor a 500. "
+	FinSi
+	
+FinAlgoritmo
