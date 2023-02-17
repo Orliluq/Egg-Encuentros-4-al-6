@@ -1,0 +1,71 @@
+/// El promedio de los trabajos prácticos de un curso se calcula en base a cuatro notas de las
+/// cuales se elimina la nota menor y se promedian las tres notas más altas. Escriba un
+/// programa que determine cuál es la nota eliminada y el promedio de los trabajos prácticos
+/// de un estudiante.
+
+
+Algoritmo notas_promedio_menor
+
+Definir notas, contador, nota1, nota2, nota3, nota4 Como Real
+Escribir "Ingresa 4 notas: ";
+
+Para contador = 1 Hasta 4 Con Paso 1 Hacer
+	
+	Leer notas;
+	
+	Si contador == 1 Entonces
+		nota1 = notas
+	FinSi
+	
+	Si contador == 2 Entonces
+		Si nota1 < notas Entonces
+			nota2 = nota1
+			nota1 = notas
+		SiNo
+			nota2 = notas
+		FinSi
+		
+	FinSi
+	
+	Si contador == 3 Entonces
+		Si nota1 < notas Entonces
+			nota3 = nota2
+			nota2 = nota1
+			nota1 = notas
+		SiNo
+			Si nota2 < notas Entonces
+				nota3 = nota2
+				nota2 = notas
+			SiNo
+				nota3 = notas
+			FinSi
+		FinSi
+	FinSi
+	
+	Si contador == 4 Entonces
+		Si nota1 < notas Entonces
+			nota4 = nota3
+			nota3 = nota2
+			nota2 = nota1
+			nota1 = notas
+		SiNo
+			Si nota2 < notas Entonces
+				nota4 = nota3
+				nota3 = nota2
+				nota2 = notas
+			SiNo
+				Si nota3 < notas Entonces
+					nota4 = nota3
+					nota3 = notas
+				SiNo
+					nota4 = notas
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+FinPara
+
+Escribir "La nota menor es: ", nota4;
+Escribir "El promedio de las notas más altas es: ", (nota1+nota2+nota3)/3;
+	
+FinAlgoritmo
